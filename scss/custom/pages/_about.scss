@@ -1,0 +1,13 @@
+.about--content {
+  background: url("../images/about-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 150px 0;
+}
+
+@include media-breakpoint-down(sm) {
+  .about--content {
+    padding: 70px 0;
+  }
+}

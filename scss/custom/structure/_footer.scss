@@ -1,0 +1,26 @@
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: $white;
+  z-index: 9;
+  box-shadow: 1px 0px 17px 4px rgba(0, 0, 0, 0.3);
+}
+
+a.link.fb {
+  &:hover {
+    color: #4267b2;
+  }
+}
+
+a.link.youtube {
+  &:hover {
+    color: #ff0000;
+  }
+}
+
+a.link.telegram {
+  &:hover {
+    color: #0088cc;
+  }
+}

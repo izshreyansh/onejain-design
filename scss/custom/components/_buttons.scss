@@ -1,0 +1,13 @@
+// 
+// Active with icons
+// 
+.btn {
+	.text-active {
+		display: none;
+	}
+	&.active {
+		.text-active {
+			display: inline-block;
+		}
+	}
+}

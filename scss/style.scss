@@ -1,0 +1,26 @@
+// (Required file)
+@import "bootstrap/functions";
+@import "config/variables";
+@import "config/custom-variables";
+
+// Import Bootstrap source files (Required file)
+@import "bootstrap/bootstrap";
+
+// Structure
+@import "custom/structure/navbar";
+@import "custom/structure/footer";
+
+// Components
+@import "custom/components/buttons";
+@import "custom/components/card";
+@import "custom/components/reboot";
+
+// Pages
+@import "custom/pages/banner";
+@import "custom/pages/video";
+@import "custom/pages/about";
+@import "custom/pages/schedule";
+@import "custom/pages/sanghname";
+
+//This is for the icons (Required file)
+@import "icons/font-awesome/css/fontawesome-all.css";

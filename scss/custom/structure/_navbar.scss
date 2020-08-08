@@ -1,0 +1,218 @@
+//
+// Topbar
+//
+
+.topbar {
+  position: fixed;
+  height: $topbar-height;
+  z-index: 50;
+  width: 100%;
+  transition: $transitions;
+  background: #ffffff85;
+  .container-fluid {
+    max-width: 1680px;
+  }
+  .navbar-collapse {
+    padding: $navbar-collapse-padding;
+  }
+  .top-navbar {
+    min-height: $topbar-height;
+    padding: 0;
+    .dropdown-toggle::after {
+      display: none;
+    }
+    .navbar-header {
+      line-height: $topbar-navlink-height;
+      .navbar-brand {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        .light-logo {
+          max-width: 80px;
+        }
+      }
+    }
+    .navbar-nav > .nav-item > .nav-link {
+      line-height: $topbar-navlink-height;
+      height: $topbar-navlink-height;
+      padding: 0 10px;
+      font-size: 18px;
+      color: rgba(0, 0, 0, 0.8);
+      font-weight: 700;
+    }
+    .nav-item.active .nav-link,
+    .nav-item:hover .nav-link {
+      color: $warning;
+    }
+  }
+  .nav-toggler,
+  .topbartoggler {
+    color: $theme-light;
+    padding: $topbar-togglar-padding;
+  }
+  .btn-getstarted {
+    padding: 13px 22px 12px 22px;
+    &:hover {
+      background-color: $success;
+      border-color: $success;
+    }
+  }
+}
+
+.topbar.fixed-header {
+  background: $white;
+  height: 75px;
+  box-shadow: 2px 6px 7px rgba(0, 0, 0, 0.05);
+  .top-navbar {
+    min-height: 75px;
+    .navbar-header {
+      line-height: 60px;
+      .light-logo {
+        max-width: 64px;
+      }
+    }
+    .navbar-nav > .nav-item > .nav-link {
+      color: $black;
+      line-height: 75px;
+      height: 75px;
+    }
+    .nav-item {
+      &:hover {
+        .nav-link {
+          color: $warning;
+        }
+      }
+    }
+  }
+}
+
+//
+// Mobile View Responsive
+//
+@include media-breakpoint-down(md) {
+  .topbar.fixed-header {
+    .top-navbar {
+      .navbar-collapse {
+        background-color: $white;
+      }
+    }
+  }
+  .topbar.inner--page-topbar.fixed-header {
+    .top-navbar {
+      .navbar-collapse {
+        background-color: #e5e5e5;
+      }
+    }
+  }
+  .topbar {
+    height: 85px;
+    .topbartoggler {
+      z-index: 2;
+      padding: 13px;
+      border-radius: 6px;
+      background: $white;
+    }
+    .top-navbar {
+      min-height: 85px;
+      .navbar-collapse.show,
+      .navbar-collapse.collapsing {
+        display: block;
+      }
+      .navbar-collapse {
+        display: none;
+        z-index: 1;
+        background-color: $white;
+        transition: 0.3s;
+      }
+      .navbar-nav > .nav-item > .nav-link {
+        padding: 0 30px;
+        color: $dark;
+        line-height: 55px;
+        height: 50px;
+        text-align: center;
+      }
+      .navbar-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-only(md) {
+  .topbar {
+    .top-navbar {
+      .navbar-nav > .nav-item > .nav-link {
+        font-size: 17px;
+        padding: 0 30px;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+//
+// hamburger menu
+//
+.topbartoggler {
+  .bars {
+    height: 3px;
+    background: $white;
+    display: block;
+    width: 16px;
+    transition: 0.2s ease-in;
+    &:first-child {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1130px) {
+  .topbar .top-navbar .navbar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .topbar .topbartoggler {
+    display: block !important;
+    z-index: 2;
+    padding: 13px;
+    border-radius: 6px;
+    background: #fff;
+  }
+
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: column;
+    margin-left: 0 !important;
+  }
+
+  .topbar .top-navbar .navbar-nav > .nav-item > .nav-link {
+    padding: 0 25px;
+  }
+
+  .topbar.fixed-header .top-navbar .navbar-nav > .nav-item > .nav-link {
+    color: $dark;
+  }
+
+  .topbar .top-navbar .navbar-collapse {
+    display: none;
+    height: 100%;
+    background-color: #1e1e1e;
+    transition: 0.3s;
+  }
+
+  .topbar .top-navbar .navbar-collapse.collapsing,
+  .topbar .top-navbar .navbar-collapse.show {
+    display: block;
+    width: 300px;
+    right: 0;
+  }
+
+  .time-title {
+    padding-bottom: 15px !important;
+  }
+}

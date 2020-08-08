@@ -1,0 +1,65 @@
+//
+// Banner
+//
+.after-shape {
+  position: relative;
+  &:after {
+    content: "";
+    display: block;
+    top: 0;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+  }
+}
+
+.banner-carousel {
+  .item {
+    position: relative;
+    .carousel-content {
+      position: absolute;
+      top: 30%;
+      width: 100%;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .after-shape {
+    &:after {
+      display: none;
+    }
+  }
+  .banner-title {
+    font-size: 35px;
+    color: $gray-700 !important;
+  }
+  .banner-subtext {
+    font-size: 16px;
+    color: $gray-700 !important;
+  }
+}
+
+@include media-breakpoint-only(md) {
+  .banner-title {
+    font-size: 35px;
+  }
+  .banner-subtext {
+    font-size: 16px;
+  }
+  .banner-carousel .item .carousel-content {
+    top: 125px;
+  }
+}
+
+.carousel-content-sm {
+  background: #e6e6e6;
+}
+
+@include media-breakpoint-down(sm) {
+  .layout-banner {
+    padding-top: 100px;
+  }
+}
