@@ -9082,7 +9082,7 @@ a.text-dark-info:hover, a.text-dark-info:focus {
   z-index: 50;
   width: 100%;
   transition: 0.2s ease-in;
-  background: #ffffff85; }
+  background: #fff; }
   .topbar .container-fluid, .topbar .container-sm, .topbar .container-md, .topbar .container-lg, .topbar .container-xl {
     max-width: 1680px; }
   .topbar .navbar-collapse {
@@ -9428,9 +9428,8 @@ ul.list-icons li i {
 .carousel-content-sm {
   background: #e6e6e6; }
 
-@media (max-width: 767.98px) {
-  .layout-banner {
-    padding-top: 100px; } }
+.layout-banner {
+  padding-top: 100px; }
 
 .video--content {
   padding: 80px 0 150px 0;
