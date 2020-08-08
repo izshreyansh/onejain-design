@@ -114,7 +114,12 @@
 					<div>
 						<img src="images/carousel-img1.png" class="img-fluid" />
 					</div>
-				</div> 
+				</div>
+				<div class="item">
+					<div>
+						<img src="images/carousel-img2.png" class="img-fluid" />
+					</div>
+				</div>
 			</div>
 		</div>
 		<section class="video--content">
@@ -219,7 +224,7 @@
 						</div>
 					</div>
 					<div class="col-10">
-						<div class="owl-carousel owl-theme schedule-carousel">
+						<div class="owl-carousel owl-theme schedule-carousel position-relative">
 							<div class="item border-right">
 								<div class="card">
 									<div class="card-body bg-light text-center title-box">
@@ -486,7 +491,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="sanghname--content" id="sangh">
+		<!-- <section class="sanghname--content" id="sangh">
 			<h2 class="border-title text-center">Sangh</h2>
 			<div class="owl-carousel owl-theme sangh-carousel mt-5">
 				<div class="item mx-2">
@@ -638,7 +643,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<!-- ============================================================== -->
 		<!-- End Topbar header -->
 		<!-- ============================================================== -->
@@ -681,7 +686,9 @@
 				responsiveClass: true,
 				nav: false,
 				autoplay: true,
+				touchDrag: false,
 				mouseDrag: false,
+				autoplay: true,
 				responsive: {
 					0: {
 						items: 1
@@ -696,7 +703,9 @@
 				nav: false,
 				responsive: {
 					0: {
-						items: 1
+						items: 1,
+						nav: true,
+						navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
 					},
 					600: {
 						items: 2
@@ -710,80 +719,80 @@
 				}
 			})
 
-			$('.sangh-carousel').owlCarousel({
-				loop: true,
-				margin: 0,
-				responsiveClass: true,
-				nav: false,
-				autoplay: true,
-				autoplayTimeout: 2999,
-				autoplaySpeed: 1990,
-				autoplayHoverPause: false,
-				responsive: {
-					0: {
-						items: 1
-					},
-					600: {
-						items: 3
-					},
-					1000: {
-						items: 5
-					},
-					1500: {
-						items: 4
-					}
-				}
-			})
+			// $('.sangh-carousel').owlCarousel({
+			// 	loop: true,
+			// 	margin: 0,
+			// 	responsiveClass: true,
+			// 	nav: false,
+			// 	autoplay: true,
+			// 	autoplayTimeout: 2999,
+			// 	autoplaySpeed: 1990,
+			// 	autoplayHoverPause: false,
+			// 	responsive: {
+			// 		0: {
+			// 			items: 1
+			// 		},
+			// 		600: {
+			// 			items: 3
+			// 		},
+			// 		1000: {
+			// 			items: 5
+			// 		},
+			// 		1500: {
+			// 			items: 4
+			// 		}
+			// 	}
+			// })
 
-			$('.sangh2-carousel').owlCarousel({
-				loop: true,
-				margin: 0,
-				responsiveClass: true,
-				nav: false,
-				autoplay: true,
-				autoplayTimeout: 2999,
-				autoplaySpeed: 1990,
-				autoplayHoverPause: false,
-				responsive: {
-					0: {
-						items: 1
-					},
-					600: {
-						items: 3
-					},
-					1000: {
-						items: 5
-					},
-					1500: {
-						items: 4
-					}
-				}
-			})
+			// $('.sangh2-carousel').owlCarousel({
+			// 	loop: true,
+			// 	margin: 0,
+			// 	responsiveClass: true,
+			// 	nav: false,
+			// 	autoplay: true,
+			// 	autoplayTimeout: 2999,
+			// 	autoplaySpeed: 1990,
+			// 	autoplayHoverPause: false,
+			// 	responsive: {
+			// 		0: {
+			// 			items: 1
+			// 		},
+			// 		600: {
+			// 			items: 3
+			// 		},
+			// 		1000: {
+			// 			items: 5
+			// 		},
+			// 		1500: {
+			// 			items: 4
+			// 		}
+			// 	}
+			// })
 
-			$('.sangh3-carousel').owlCarousel({
-				loop: true,
-				margin: 0,
-				responsiveClass: true,
-				nav: false,
-				autoplay: true,
-				autoplayTimeout: 2999,
-				autoplaySpeed: 1990,
-				autoplayHoverPause: false,
-				responsive: {
-					0: {
-						items: 1
-					},
-					600: {
-						items: 3
-					},
-					1000: {
-						items: 5
-					},
-					1500: {
-						items: 4
-					}
-				}
-			})
+			// $('.sangh3-carousel').owlCarousel({
+			// 	loop: true,
+			// 	margin: 0,
+			// 	responsiveClass: true,
+			// 	nav: false,
+			// 	autoplay: true,
+			// 	autoplayTimeout: 2999,
+			// 	autoplaySpeed: 1990,
+			// 	autoplayHoverPause: false,
+			// 	responsive: {
+			// 		0: {
+			// 			items: 1
+			// 		},
+			// 		600: {
+			// 			items: 3
+			// 		},
+			// 		1000: {
+			// 			items: 5
+			// 		},
+			// 		1500: {
+			// 			items: 4
+			// 		}
+			// 	}
+			// })
 		});
 	</script>
 </body>

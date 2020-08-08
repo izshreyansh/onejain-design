@@ -67,3 +67,22 @@
   max-height: 108px;
   min-height: 108px;
 }
+
+.schedule-carousel {
+  position: relative;
+  .owl-nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    .owl-prev {
+      position: absolute;
+      top: 45px;
+      left: 15px;
+    }
+    .owl-next {
+      position: absolute;
+      top: 45px;
+      right: 15px;
+    }
+  }
+}

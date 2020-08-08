@@ -9187,7 +9187,9 @@ a.text-dark-info:hover, a.text-dark-info:focus {
   .topbartoggler .bars:first-child {
     margin-bottom: 10px; }
 
-@media (min-width: 1024px) and (max-width: 1130px) {
+@media (min-width: 992px) and (max-width: 1171px) {
+  .navbar-expand-lg {
+    flex-flow: column !important; }
   .topbar .top-navbar .navbar-header {
     display: flex;
     align-items: center;
@@ -9207,15 +9209,13 @@ a.text-dark-info:hover, a.text-dark-info:focus {
   .topbar.fixed-header .top-navbar .navbar-nav > .nav-item > .nav-link {
     color: #1e1e1e; }
   .topbar .top-navbar .navbar-collapse {
-    display: none;
-    height: 100%;
-    background-color: #1e1e1e;
+    display: none !important;
+    width: 100%;
+    background-color: #fff;
     transition: 0.3s; }
   .topbar .top-navbar .navbar-collapse.collapsing,
   .topbar .top-navbar .navbar-collapse.show {
-    display: block;
-    width: 300px;
-    right: 0; }
+    display: block !important; }
   .time-title {
     padding-bottom: 15px !important; } }
 
@@ -9501,6 +9501,21 @@ ul.list-icons li i {
 .title-box {
   max-height: 108px;
   min-height: 108px; }
+
+.schedule-carousel {
+  position: relative; }
+  .schedule-carousel .owl-nav {
+    position: absolute;
+    top: 0;
+    width: 100%; }
+    .schedule-carousel .owl-nav .owl-prev {
+      position: absolute;
+      top: 45px;
+      left: 15px; }
+    .schedule-carousel .owl-nav .owl-next {
+      position: absolute;
+      top: 45px;
+      right: 15px; }
 
 .sanghname--content {
   padding: 80px 0; }

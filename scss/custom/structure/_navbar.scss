@@ -170,7 +170,10 @@
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1130px) {
+@media (min-width: 992px) and (max-width: 1171px) {
+  .navbar-expand-lg {
+    flex-flow: column !important;
+  }
   .topbar .top-navbar .navbar-header {
     display: flex;
     align-items: center;
@@ -199,17 +202,15 @@
   }
 
   .topbar .top-navbar .navbar-collapse {
-    display: none;
-    height: 100%;
-    background-color: #1e1e1e;
+    display: none !important;
+    width: 100%;
+    background-color: #fff;
     transition: 0.3s;
   }
 
   .topbar .top-navbar .navbar-collapse.collapsing,
   .topbar .top-navbar .navbar-collapse.show {
-    display: block;
-    width: 300px;
-    right: 0;
+    display: block !important;
   }
 
   .time-title {
